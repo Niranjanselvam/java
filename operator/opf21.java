@@ -7,7 +7,8 @@ public class opf21
         Scanner sc= new Scanner(System.in);
         double b=sc.nextInt();
         double h=sc.nextInt();
+        double c=0.5*(b*h);
         System.out.println(c);
-//heloo
+
     }
 }
