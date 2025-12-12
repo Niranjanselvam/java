@@ -10,9 +10,6 @@ public class co1
         {
             System.out.println("postive");
         }
-        else{
-            System.err.println("negative");
-        }
         
     }
 
