@@ -1,7 +1,6 @@
-//simple if
+//if else statement
 import java.util.Scanner;
-
-public class co1
+public class co2
 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
@@ -9,6 +8,9 @@ public class co1
         if(a>0)
         {
             System.out.println("postive");
+        }
+        else{
+            System.err.println("negative");
         }
         
     }
