@@ -1,13 +1,11 @@
-
-//7 Formula Based Write a Java Program to convert Celsius to Fahrenheit.
+//8 Formula Based Write a Java Program to find the perimeter of a square.
 import java.util.Scanner;
-
-public class opf27
+public class op28
 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         int a=sc.nextInt();
-        int b=(9*a)/5+32;
-        System.out.println(b);
+        int b=4*a;
+        System.err.println(b);
     }
 }

@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class opf35
+public class op35
 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);

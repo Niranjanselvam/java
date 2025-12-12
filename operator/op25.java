@@ -1,6 +1,6 @@
 //// 5. Formula Based: Write a Java Program to find the distance between two points.
 import java.util.Scanner;
-public class opf25 {
+public class op25 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

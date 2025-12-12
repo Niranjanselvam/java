@@ -1,7 +1,7 @@
 //13 Formula Based Write a Java Program to find surface area and volume of a cuboid.
 import java.util.Scanner;
 
-public class opf33{
+public class op33{
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int l= sc.nextInt();

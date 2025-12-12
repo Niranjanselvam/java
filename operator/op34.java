@@ -1,6 +1,6 @@
 //14 Formula Based Write a Java Program to find surface area and volume of a sphere.
 import java.util.Scanner;
-public class opf34
+public class op34
 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);

@@ -1,7 +1,7 @@
 //6 Formula Based Write a Java Program to convert Fahrenheit to Celsius.
 import java.util.Scanner;
 
-public class opf26
+public class op26
 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
