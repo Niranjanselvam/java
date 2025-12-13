@@ -1,19 +1,16 @@
-
+//16 Number Based Write a Java Program to check whether a number is divisible by both 2 and 5 but not by 8.
 import java.util.Scanner;
-
-//11 Number Based Write a Java Program to check whether the first digit of a 3-digit number is odd or even.
-public class co16
-{
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=a/100;
-        if(b%2==0)
-        {
-            System.out.println("Even");
-        }
-        else{
-            System.out.println("Odd");
-        }
+public class co16{
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    if((a%2==0)&&(a%5==0)&&(a%8!=0))
+    {
+        System.out.println("divisible");
     }
+    else{
+        System.out.println("no");
+    }
+
+}
 }

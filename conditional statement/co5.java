@@ -1,21 +1,19 @@
+
 import java.util.Scanner;
+
+//5 Number Based Write a Java Program to check whether a number is a 3-digit number or not.
 public class co5
 {
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        if(a%2==0)
+        if((a>=100&&a<=999)||(a<=-100&&a>=-999))
         {
-            if(a%3==0)
-            {
-                System.err.println("even and multiple of 3");
-            }
-            else{
-                System.err.println("even and not muliple of 3");
-            }
+            System.out.println("3 digit");
         }
-        else{
-            System.err.println("its odd and multiple of 3");
+        else
+        {
+            System.out.println("no");
         }
     }
 }

@@ -1,17 +1,16 @@
-//20 Number Based Write a Java Program to check whether the ASCII value of a character is even or odd.
+//5 Character Based Write a Java Program to check whether two characters are equal or not.
 import java.util.Scanner;
+
 public class co25 {
-    public static void main(String[] args)
-     {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        char ch = sc.next().charAt(0);
-        int ascii = (int) ch;
-        if (ascii % 2 == 0) 
-        {
-            System.out.println("ASCII value of '" + ch + "' (" + ascii + ") is EVEN.");
-        } 
-        else {
-            System.out.println("ASCII value of '" + ch + "' (" + ascii + ") is ODD.");
+        char ch1 = sc.next().charAt(0);
+        char ch2 = sc.next().charAt(0);
+
+        if (ch1 == ch2) {
+            System.out.println("equal.");
+        } else {
+            System.out.println("Not equal.");
         }
     }
 }

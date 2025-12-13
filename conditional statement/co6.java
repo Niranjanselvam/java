@@ -1,38 +1,19 @@
+
 import java.util.Scanner;
 
+//5 Number Based Write a Java Program to check whether a number is a 3-digit number or not.
 public class co6
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int day=sc.nextInt();
-        if(day==1)
+        int a=sc.nextInt();
+        if((a>=100&&a<=999)||(a<=-100&&a>=-999))
         {
-            System.err.println("monday");
-        }
-        else if(day==2)
-        {
-            System.out.println("Tuesday");
-        }
-        else if(day==3)
-        {
-            System.out.println("wednesday");
-        }else if(day==4)
-        {
-            System.out.println("thursday");
-        }else if(day==5)
-        {
-            System.out.println("friday");
-        }else if(day==6)
-        {
-            System.out.println("saturday");
-        }else if(day==7)
-        {
-            System.out.println("sunday");
+            System.out.println("3 digit");
         }
         else
         {
-            System.err.println("bye tata");
+            System.out.println("no");
         }
-
     }
 }

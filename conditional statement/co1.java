@@ -1,16 +1,20 @@
-//simple if
+
 import java.util.Scanner;
 
+//1 Number Based Write a Java Program to find greatest among two numbers.
 public class co1
 {
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        if(a>0)
+        int b=sc.nextInt();
+        if(a>b)
         {
-            System.out.println("postive");
+            System.out.println("A");
         }
-        
+        else
+        {
+            System.out.println("C");
+        }
     }
-
 }

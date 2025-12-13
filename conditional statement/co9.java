@@ -1,18 +1,13 @@
 
 import java.util.Scanner;
 
-//2 Number Based Write a Java Program to find smallest among two numbers.
-public class co9{
+//9 Number Based Write a Java Program to check odd or even using bitwise operator.
+public class co9
+{
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        int b=sc.nextInt();
-        if(a<b)
-        {
-            System.out.println("A");
-        }
-        else{
-            System.out.println("B");
-        }
+        String b=((a&1)==0)?"even":"odd";
+        System.out.println(b);
     }
 }

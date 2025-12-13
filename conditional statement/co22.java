@@ -1,21 +1,21 @@
-
+//2 Character Based Write a Java Program to check whether a character is uppercase, lowercase, digit, or special symbol.
 import java.util.Scanner;
 
-//17 Number Based Write a Java Program to check whether two numbers have the same last digit.
-public class co22
-{
+public class co22 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int c=a%10;
-        int d=b%10;
-        if(c==d)
-        {
-            System.out.println("same");
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        if (ch >= 'A' && ch <= 'Z') {
+            System.out.println("uppercase");
         }
-        else{
-            System.out.println("no");
+        else if (ch >= 'a' && ch <= 'z') {
+            System.out.println("Lowercase Letter.");
+        }
+        else if (ch >= '0' && ch <= '9') {
+            System.out.println("Digit.");
+        }
+        else {
+            System.out.println("Special Symbol.");
         }
     }
 }

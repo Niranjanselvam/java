@@ -1,13 +1,19 @@
 
 import java.util.Scanner;
 
-//9 Number Based Write a Java Program to check odd or even using bitwise operator.
+//14 Number Based Write a Java Program to check whether a number is divisible by both 3 and 5.
 public class co14
 {
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        String b=((a&1)==0)?"even":"odd";
-        System.out.println(b);
+        if((a%3==0)&&(a%5==0))
+        {
+            System.out.println("divisible");
+        }
+        else{
+            System.out.println("no");
+        }
     }
 }

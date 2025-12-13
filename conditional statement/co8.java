@@ -1,20 +1,19 @@
 
 import java.util.Scanner;
 
-//1 Number Based Write a Java Program to find greatest among two numbers.
+//8 Number Based Write a Java Program to check whether the last digit of a number is divisible by 3.
 public class co8
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        int b=sc.nextInt();
-        if(a>b)
+        if((a/3)*3==a)                       //if((a/2)*2==a)
+
         {
-            System.out.println("A");
+            System.err.println("divisible by 3");
         }
-        else
-        {
-            System.out.println("C");
+        else{
+            System.err.println("no");
         }
     }
 }

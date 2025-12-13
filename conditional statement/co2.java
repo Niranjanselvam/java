@@ -1,18 +1,18 @@
-//if else statement
+
 import java.util.Scanner;
-public class co2
-{
+
+//2 Number Based Write a Java Program to find smallest among two numbers.
+public class co2{
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
         int a=sc.nextInt();
-        if(a>0)
+        int b=sc.nextInt();
+        if(a<b)
         {
-            System.out.println("postive");
+            System.out.println("A");
         }
         else{
-            System.err.println("negative");
+            System.out.println("B");
         }
-        
     }
-
 }

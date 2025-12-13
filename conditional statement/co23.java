@@ -1,28 +1,18 @@
 
 import java.util.Scanner;
 
-//18 Number Based Write a Java Program to check whether a number is a single-digit, two-digit, or three-digit number.
+//3 Character Based Write a Java Program to check whether a character is alphabet or not.
 public class co23
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        if((a<10)&&(a>-0))
+        char a=sc.next().charAt(0);
+        if(a>='a'&&a<='z'||a>='A'&&a<='Z')
         {
-            System.out.println("single");
+            System.out.println("alphabet");
         }
-        else if((a<100)&&(a>=10))
-        {
-            System.out.println("double");
+        else{
+            System.out.println("not");
         }
-        else if((a<1000)&&(a>=100))
-        {
-            System.out.println("triple");
-        }
-        else
-        {
-            System.out.println("more than 3");
-        }
-
     }
 }
