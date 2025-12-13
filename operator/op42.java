@@ -1,5 +1,4 @@
 //7 Scenario Based Q7.Write a java Program to Distribute Candies Equally Among People
-// 7 Scenario Based Q7. Write a Java Program to Distribute Candies Equally Among People
 import java.util.Scanner;
 
 public class op42 {
