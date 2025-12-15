@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 //Q7. Write a Java program to check whether a number is Armstrong number or not.
-public class lo6
+public class lo7
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

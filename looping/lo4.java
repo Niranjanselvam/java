@@ -1,6 +1,6 @@
 //Q4. Write a Java program to print the product of digits of a given number.
 import java.util.Scanner;
-public class lo3
+public class lo4
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
