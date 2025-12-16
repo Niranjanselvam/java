@@ -16,4 +16,4 @@ public class lo9
         }
         System.out.println(a);
     }
-}  aq
+}
