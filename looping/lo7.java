@@ -18,10 +18,10 @@ public class lo7
         }
         if(sum==t)
         {
-            System.out.println("Palindrome");
+            System.out.println("armstrong");
         }
         else{
-            System.out.println("Not an palindrome");
+            System.out.println("Not an armstrong");
         }
     }
 }
