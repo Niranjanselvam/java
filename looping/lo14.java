@@ -5,28 +5,31 @@ import java.util.Scanner;
 public class lo14
 {
     public static void main(String[] args) 
-    {
+    {                                                   //145=1!+4!+5! = 1+24+120=145
+
         Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-       int big;
-       int gcd=1;
-       int lcm;
-       if(a>b)
-       {
-        big=a;
-       }
-       else{
-        big=b;
-       }
-       for(int i=1;i<=big;i++)
-       {
-        if(a%i==0&&b%i==0)
+        int n=sc.nextInt();
+        int sum=0;
+        int o=n;
+        while(o>0)
         {
-            gcd=i;
+            int fact=1;
+            int digit=o%10;
+            for(int i=1;i<=digit;i++)
+            {
+                fact=fact*i;
+            }
+            sum=sum+fact;
+            o=o/10;
         }
-       }
-        lcm=(a*b)/gcd;
-       System.out.println("lcm");
+        if(sum==n)
+        {
+            System.out.println("Strong Number");
+        }
+        else
+        {
+            System.out.println("Not a Strong Number");
+        }
+
     }
 }
