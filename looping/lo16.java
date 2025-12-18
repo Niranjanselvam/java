@@ -11,7 +11,7 @@ public class lo16
         int res=0;
         while(a>0)
         {                                                       //10 =1+0=1
-                                                                1%1==0
+                                                               // 10%1==0
             int r=a%10;
             res+=r;
             a=a/10;
