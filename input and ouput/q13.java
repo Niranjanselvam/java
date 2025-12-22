@@ -1,6 +1,6 @@
 //Q13. Print two numbers with a space
 import java.util.Scanner;
-class space
+class Main 
 {
     public static void main(String[] args) 
     {

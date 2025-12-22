@@ -1,11 +1,11 @@
-//program to print string
+//program to print integer
 import java.util.Scanner;
-public class printstring
+public class Main
 {
     public static void main(String [] args)
     {
         Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        System.out.println(str);
+        int a=sc.nextInt();
+        System.out.println(a);
     }
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Address {
+public class q25 {
     public static void main(String[] args)
      {
         Scanner sc = new Scanner(System.in);

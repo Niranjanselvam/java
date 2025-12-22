@@ -1,6 +1,6 @@
 //Q12. Write a Java Program to print the character for the given ASCII value.
 import java.util.Scanner;
-public class charascii
+public class Main
 {
     public static void main(String[] args)
     {

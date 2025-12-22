@@ -1,6 +1,6 @@
 //Q20. Write a Java Program to print the size of char, int, float, and double.
 import java.util.Scanner;
-public class datatype
+public class q20
 {
     public static void main(String [] args)
     {

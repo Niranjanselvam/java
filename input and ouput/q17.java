@@ -1,6 +1,6 @@
 // Print date of birth DD/MM/YYYY
 import java.util.*;
-class birthdate {
+class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String dd = sc.next();

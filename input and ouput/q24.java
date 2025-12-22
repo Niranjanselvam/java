@@ -1,6 +1,6 @@
 //Q24. Write a Java Program to print current time in the format HH:MM:SS.
 import java.util.*;
-class hh {
+class q24 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String HH = sc.next();
