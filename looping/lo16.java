@@ -9,10 +9,10 @@ public class lo16
         int a=sc.nextInt();
         int o=a;
         int res=0;
-        while(a>0)
+        while(a>0)n     
         {                                                       //10 =1+0=1
                                                                // 10%1==0
-            int r=a%10;
+            int r=a%10; 
             res+=r;
             a=a/10;
         }

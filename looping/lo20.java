@@ -8,7 +8,7 @@ public class lo20
         Scanner sc= new Scanner(System.in);
         int a=sc.nextInt();
         if(a%3==0)                                
-        {
+         {
             System.out.println("yes");
         }
         else
