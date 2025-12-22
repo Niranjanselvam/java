@@ -1,6 +1,6 @@
 //program to print fractional number
 import java.util.Scanner;
-public class Main
+public class fractionalno
 {
     public static void main(String [] args)
     {

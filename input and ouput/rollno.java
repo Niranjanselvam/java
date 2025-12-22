@@ -1,7 +1,7 @@
 //Q21. Print roll number and name
 
 import java.util.*;
-class Main {
+class rollno {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int roll = sc.nextInt();

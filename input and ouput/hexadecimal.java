@@ -1,6 +1,6 @@
 //  Write a Java Program to print the given integer number in hexadecimal format.
 import java.util.Scanner;
- public class q7
+ public class hexadecimal
  {                                                                          //????????
      public static void main(String [] args)
      {

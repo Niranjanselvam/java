@@ -1,6 +1,6 @@
 //program to print the given word
 *import java.util.Scanner;
-public class Main
+public class givenword
 {
     public static void main(String [] args)
     {

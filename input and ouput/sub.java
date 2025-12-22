@@ -1,7 +1,7 @@
 //Q22. Print marks in 5 subjects
 
- java.util.*;
-class Main {
+ java.util.Scanner;
+class sub {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int m1 = sc.nextInt();

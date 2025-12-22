@@ -1,5 +1,5 @@
 //program to print welcome
-public class q1{
+public class welcome{
 public static void main(String [] args)
 {
     System.out.println("Welcome");
