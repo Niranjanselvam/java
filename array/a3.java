@@ -13,4 +13,5 @@ public class a3{
             System.out.println("the sum is "+sum);
         }
     }
-}
+}git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
