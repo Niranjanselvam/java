@@ -1,3 +1,4 @@
+Q4. Write a Java program to find the sum of even numbers in an array.
 import java.util.Scanner;
 public class a3
 {

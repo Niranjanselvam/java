@@ -1,3 +1,4 @@
+Q5. Write a Java program to find the alternate sum of an array (arr[0] - arr[1] + arr[2] - arr[3] + …).
 import java.util.Scanner;
 public class a5{
     public static void main(String [] args)
