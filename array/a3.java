@@ -1,4 +1,4 @@
-Q3. Write a Java program to find the running sum of elements in an array.
+// Q3. Write a Java program to find the running sum of elements in an array.
 import java.util.Scanner;
 public class a3{
     public static void main(String [] args)

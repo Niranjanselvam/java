@@ -1,6 +1,6 @@
-Q6. Write a Java program to count the number of odd elements in an array.
+// Q6. Write a Java program to count the number of odd elements in an array.
 import java.util.Scanner;
-public class a5
+public class a6
 {
     public static void main(String [] args)
     {
