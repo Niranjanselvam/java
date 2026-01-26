@@ -1,4 +1,4 @@
-/* class linkedlist
+class linkedlist
 {
     class node
     {
@@ -50,4 +50,4 @@
         list.add(40);
         list.display();
     }
-} */
+}
