@@ -1,0 +1,68 @@
+import java.util.*;
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+class Linked{
+    Node head=null;
+    void insert(int data){
+        Node newNode=new Node(data);
+        if(head==null){
+            head=newNode;
+            return;
+        }
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+    }
+    void sort(){
+        if(head==null||head.next==null)return;
+        Node temp=head;
+        while(temp!=null){
+            Node curr=temp.next;
+            while(curr!=null){
+                if(temp.data>curr.data){
+                    int t=temp.data;
+                    temp.data=curr.data;
+                    curr.data=t;
+                }
+                curr=curr.next;
+            }
+            temp=temp.next;
+        }
+        
+    }
+    void display(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+}
+public class mergesor{
+    public static void main(String[]args){
+        Scanner s=new Scanner(System.in);
+        Linked l=new Linked();
+        int n=s.nextInt();
+        for(int i=0;i<n;i++){
+            int data=s.nextInt();
+            l.insert(data);
+        }
+        int n2=s.nextInt();
+        for(int i=0;i<n2;i++){
+            int data=s.nextInt();
+            l.insert(data);
+        }
+        l.sort();
+        l.display();
+
+    }
+}

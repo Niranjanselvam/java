@@ -1,6 +1,8 @@
 import java.util.Scanner;
-class insertatend{
-    class node{
+public class Main
+{
+    class node
+    {
         int data;
         node next;
         node(int data)
@@ -18,21 +20,19 @@ class insertatend{
             head=newnode;
             return;
         }
+        node temp=head;
+        while(temp.next!=null)
+        {
+            temp=temp.next;
+        }
+        temp.next=newnode;
         
-            node temp=head;
-            while(temp.next!=null)
-            {
-                temp=temp.next;
-            }
-            temp.next=newnode;
-
     }
     public void display()
-    { 
+    {
         if(head==null)
         {
             System.out.println("list is empty");
-            return;
         }
         node temp=head;
         while(temp!=null)
@@ -40,24 +40,28 @@ class insertatend{
             System.out.print(temp.data+" ");
             temp=temp.next;
         }
-        
+    }
+    public void deleteatbeginning()
+    {
+        if(head==null)
+        {
+            System.out.println("list is empty");
+        }
+        head=head.next;
     }
     public static void main(String[]args)
     {
-        insertatend list=new insertatend();
+        Main list=new Main();
         Scanner sc=new Scanner(System.in);
-    System.out.println("Nodes :");
-    int a=sc.nextInt();
-    System.out.println("elements :");
-    for(int i=0;i<a;i++)
-    {
-    list.add(sc.nextInt());
-    }
-    System.out.println("last node :");
-    int value=sc.nextInt();
-    list.add(value);
-    System.out.println("final :");
-    list.display();
-
+        int a=sc.nextInt();
+        for(int i=0;i<a;i++)
+        {
+            list.add(sc.nextInt());
+        }
+        list.display();
+        // System.out.println();
+        list.deleteatbeginning();
+        System.out.println();
+        list.display();
     }
 }

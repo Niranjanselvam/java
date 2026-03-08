@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class linkedlist
+public class Main
 {
     class node
     {
@@ -14,35 +14,41 @@ class linkedlist
     node head=null;
     public void add(int data)
     {
-       node newnode=new node(data);
-       newnode.next=head;
-       head=newnode;
-    }
-    public void display()
-    {
+        node newnode=new node(data);
         if(head==null)
         {
-            System.out.println("List is empty");
+            head=newnode;
+            return;
         }
         node temp=head;
         while(temp.next!=null)
         {
-            System.out.println(temp.data+" ");
+            temp=temp.next;
         }
-        temp=temp.next;
+        temp.next=newnode;
+    }
+    
+    public void countnodes()
+    {
+        int count=0;
+        node temp=head;
+        while(temp!=null)
+        {
+            count++;
+            temp=temp.next;
+        }
+        System.out.println(count);
     }
     public static void main(String[]args)
     {
-        linkedlist list=new linkedlist();
+        Main list=new Main();
         Scanner sc=new Scanner(System.in);
-        System.out.println("nodes :");
         int a=sc.nextInt();
-        System.out.println("enter elements :");
         for(int i=0;i<a;i++)
         {
             list.add(sc.nextInt());
         }
-        list.display(); 
-
+        list.countnodes();
+        
     }
 }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class deleteatbeginning
+public class Main
 {
     class node
     {
@@ -12,7 +12,7 @@ class deleteatbeginning
         }
     }
     node head=null;
-    public void add(int data)
+    public  void add(int data)
     {
         node newnode=new node(data);
         if(head==null)
@@ -26,7 +26,36 @@ class deleteatbeginning
             temp=temp.next;
         }
         temp.next=newnode;
-
+        
+    }
+    public void remove(int n)
+    {
+        if(head==null)
+        {
+            System.out.println("list is empty");
+            return;
+        }
+        if(n==1)
+        {
+            head=head.next;
+            return;
+        }
+        node temp=head;
+        for(int i=0;i<n;i++)
+        {
+            if(temp.next==null)
+            {
+                System.out.println("invalid node");
+                return;
+            }
+            temp=temp.next;
+        }
+        if(temp.next==null)
+        {
+            System.out.println("invalid");
+            return;
+        }
+        temp.next=temp.next.next;
     }
     public void display()
     {
@@ -41,30 +70,19 @@ class deleteatbeginning
             System.out.println(temp.data+" ");
             temp=temp.next;
         }
-    }
-    public void deletebeginning()
-    {
-        if(head==null)
-        {
-            System.out.println("list is empty");
-        }
-        head=head.next;
+        
     }
     public static void main(String[]args)
     {
-        deleteatbeginning list=new deleteatbeginning();
         Scanner sc=new Scanner(System.in);
-        System.out.println("nodes :");
+        Main list=new Main();
         int a=sc.nextInt();
-        System.out.println("Element :");
         for(int i=0;i<a;i++)
         {
             list.add(sc.nextInt());
         }
-        System.out.println("output before deletion :");
-        list.display();
-        list.deletebeginning();
-        System.out.println("output after deletion :");
+        int n=sc.nextInt();
+        list.remove(n);
         list.display();
     }
 }

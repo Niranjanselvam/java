@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class deleteatbeginning
+public class Main
 {
     class node
     {
@@ -26,45 +26,58 @@ class deleteatbeginning
             temp=temp.next;
         }
         temp.next=newnode;
-
+    }
+    public void rotate(int k)
+    {
+        if(head==null||k==0||head.next==null)
+        {
+            return;
+        }
+        //length and lastnode
+        node temp=head;
+        int length=1;
+        while(temp.next!=null)
+        {
+            temp=temp.next;
+            length++;
+            
+        }
+        temp.next=head;
+        k=k%length;
+        /*int steps=length-k;*/
+        node newtail=head;
+        for(int i=1;i<k;i++)
+        {
+            newtail=newtail.next;
+        }
+        head=newtail.next;
+        newtail.next=null;
     }
     public void display()
     {
         if(head==null)
         {
-            System.out.println("list is empty");
             return;
         }
         node temp=head;
         while(temp!=null)
         {
-            System.out.println(temp.data+" ");
+            System.out.print(temp.data+" ");
             temp=temp.next;
         }
     }
-    public void deletebeginning()
-    {
-        if(head==null)
-        {
-            System.out.println("list is empty");
-        }
-        head=head.next;
-    }
     public static void main(String[]args)
     {
-        deleteatbeginning list=new deleteatbeginning();
+        Main list=new Main();
         Scanner sc=new Scanner(System.in);
-        System.out.println("nodes :");
         int a=sc.nextInt();
-        System.out.println("Element :");
-        for(int i=0;i<a;i++)
+        while(a!=-1)
         {
-            list.add(sc.nextInt());
+            list.add(a);
+            a=sc.nextInt();
         }
-        System.out.println("output before deletion :");
-        list.display();
-        list.deletebeginning();
-        System.out.println("output after deletion :");
+        int k=sc.nextInt();
+        list.rotate(k);
         list.display();
     }
 }

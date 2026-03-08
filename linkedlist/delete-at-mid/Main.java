@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class deleteatbeginning
+public class Main
 {
     class node
     {
@@ -26,7 +26,6 @@ class deleteatbeginning
             temp=temp.next;
         }
         temp.next=newnode;
-
     }
     public void display()
     {
@@ -42,29 +41,42 @@ class deleteatbeginning
             temp=temp.next;
         }
     }
-    public void deletebeginning()
+    public void deleteatmid()
     {
         if(head==null)
         {
             System.out.println("list is empty");
+            return;
         }
-        head=head.next;
+        if(head.next==null)
+        {
+            head=null;
+            return;
+        }
+        node slow=head;
+        node fast=head;
+        node temp=null;
+        while(fast!=null&&fast.next!=null)
+        {
+            fast=fast.next.next;
+            temp=slow;
+            slow=slow.next;
+        }
+        temp.next=slow.next;
     }
     public static void main(String[]args)
     {
-        deleteatbeginning list=new deleteatbeginning();
+        Main list=new Main();
         Scanner sc=new Scanner(System.in);
-        System.out.println("nodes :");
         int a=sc.nextInt();
-        System.out.println("Element :");
         for(int i=0;i<a;i++)
         {
             list.add(sc.nextInt());
         }
-        System.out.println("output before deletion :");
         list.display();
-        list.deletebeginning();
-        System.out.println("output after deletion :");
+        System.out.println();
+        list.deleteatmid();
+        System.out.println();
         list.display();
     }
 }

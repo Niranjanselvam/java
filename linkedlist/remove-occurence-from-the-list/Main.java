@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class deleteatbeginning
+public class Main
 {
     class node
     {
@@ -26,45 +26,37 @@ class deleteatbeginning
             temp=temp.next;
         }
         temp.next=newnode;
-
     }
-    public void display()
+    public void occurence(int n)
     {
-        if(head==null)
+        while(head!=null&&head.data==null)
         {
-            System.out.println("list is empty");
-            return;
+            head=head.next;
         }
         node temp=head;
-        while(temp!=null)
+        while(temp!=null&&temp.next!=null)
         {
-            System.out.println(temp.data+" ");
-            temp=temp.next;
+            if(temp.next.data==n)
+            {
+                temp.next=temp.next.next;
+            }
+            else
+            {
+                temp=temp.next;
+            }
         }
-    }
-    public void deletebeginning()
-    {
-        if(head==null)
-        {
-            System.out.println("list is empty");
-        }
-        head=head.next;
     }
     public static void main(String[]args)
     {
-        deleteatbeginning list=new deleteatbeginning();
+        Main list=new Main();
         Scanner sc=new Scanner(System.in);
-        System.out.println("nodes :");
         int a=sc.nextInt();
-        System.out.println("Element :");
         for(int i=0;i<a;i++)
         {
             list.add(sc.nextInt());
         }
-        System.out.println("output before deletion :");
-        list.display();
-        list.deletebeginning();
-        System.out.println("output after deletion :");
+        int n=sc.nextInt();
+        list.occurence(n);
         list.display();
     }
 }
